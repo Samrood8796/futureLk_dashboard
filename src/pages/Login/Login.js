@@ -13,7 +13,8 @@ const Login = () => {
         axios.post(loginPost, { email, password }, {
             headers: { "Content-Type": "application/json" },
         }).then((userData) => {
-            localStorage.setItem("user",userData.data)
+            console.log(userData?.data?.user);
+            localStorage.setItem("user",userData.data.user)
             navigate('/')
         }).catch((err) => {
             ((error) => {

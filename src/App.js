@@ -2,14 +2,22 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import ForgottPassword from "./pages/ForgottPassword/ForgottPassword";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import ResetPassword from "./pages/ResetPassword/ResetPassword";
+import { useEffect, useState } from "react";
 function App() {
+  const [user, setUser] = useState({})
+  useEffect(()=>{
+    const user = localStorage.getItem("user")
+    setUser(user)
+
+  },[])
+console.log(user)
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Dashboard />} />
+          <Route path='/' element={<Dashboard /> }/>
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/resetPassword' element={<ResetPassword />} ></Route>
