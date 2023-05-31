@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from '../../utils/axios'
 import toast, { Toaster } from 'react-hot-toast';
@@ -15,6 +15,7 @@ const Login = () => {
         }).then((userData) => {
             console.log(userData?.data?.user);
             localStorage.setItem("user",userData.data.user)
+            window.location.reload()
             navigate('/')
         }).catch((err) => {
             ((error) => {

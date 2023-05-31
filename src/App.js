@@ -10,16 +10,22 @@ function App() {
   useEffect(()=>{
     const user = localStorage.getItem("user")
     setUser(user)
-
-  },[])
+  },[<Dashboard />,user])
 console.log(user)
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Dashboard /> }/>
+        <Route
+            path="/"
+            element={user ? <Dashboard /> : <Navigate to="/login" />}
+          />
+        <Route
+            path="/login"
+            element={!user ? <Login /> : <Navigate to="/" />}
+          />
+          {/* <Route path='/login' element={`${!user ? <Login /> : <Navigate to="/" />}`} /> */}
           <Route path='/register' element={<Register />} />
-          <Route path='/login' element={<Login />} />
           <Route path='/resetPassword' element={<ResetPassword />} ></Route>
           <Route path='/forgottPassword' element={<ForgottPassword />}></Route>
           <Route path='/success' element={<div className='text-3xl font-bold p-48 text-green-300'>check your email </div>} ></Route>
