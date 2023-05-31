@@ -90,7 +90,7 @@ const Mainbar = () => {
                     </div>
 
                     {/* section 3 */}
-                    <div>
+                    <div className="max-h-64 overflow-y-auto">
                         <div className={"mt20"}>
                             <div style={{ backgroundColor: "#fff", padding: 10 }}>
                                 <div style={{ margin: 10, textAlign: "left" }}>Device Status</div>
@@ -103,7 +103,7 @@ const Mainbar = () => {
                                 </div>
                                 {deviceData?.map((item, index) => (
                                     <div className={"rowFlex"} style={{ justifyContent: "space-between", marginBottom: 10 }}>
-                                        <div>{item.device}</div>
+                                        <div className="content-stretch">{item.device}</div>
                                         <div style={{ pading: 2, backgroundColor: "green", marginLeft: 60 }}>{item.status}</div>
                                         <div style={{ marginLeft: 30 }}>{item.lr}</div>
                                     </div>

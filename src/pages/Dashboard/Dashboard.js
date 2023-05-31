@@ -8,13 +8,11 @@ const Dashboard = () => {
     return (
         <React.Fragment>
             <div className='flex flex-row'>
-                <div className='hidden md:block'>
                 <Sidebar />
-                </div>
                 <div className='w-full bg-[#f6f6f6]'>
                     <Navbar />
                     <p className='p-6 text-lg font-semibold'>Project</p>
-                    <div className='px-8 w-full'>
+                    <div className='px-8'>
                         <Table />
                     </div>
                   <div className='px-8'>
