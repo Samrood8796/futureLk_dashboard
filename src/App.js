@@ -18,7 +18,7 @@ console.log(user)
         <Routes>
         <Route
             path="/"
-            element={user ? <Dashboard /> : <Navigate to="/login" />}
+            element={user ? <Dashboard user={user}/> : <Navigate to="/login" />}
           />
         <Route
             path="/login"
@@ -28,7 +28,8 @@ console.log(user)
           <Route path='/register' element={<Register />} />
           <Route path='/resetPassword' element={<ResetPassword />} ></Route>
           <Route path='/forgottPassword' element={<ForgottPassword />}></Route>
-          <Route path='/success' element={<div className='text-3xl font-bold p-48 text-green-300'>check your email </div>} ></Route>
+          <Route path='/success' element={<div className='text-3xl font-bold p-48 text-green-300'>password reste link has been send to email
+          please check your email </div>} ></Route>
         </Routes>
       </BrowserRouter>
     </div>
