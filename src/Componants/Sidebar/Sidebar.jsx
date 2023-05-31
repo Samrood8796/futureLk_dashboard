@@ -2,7 +2,7 @@ import React from 'react'
 const Sidebar = () => {
   return (
     <>
-      <div className='bg-[#0b3366] w-[300px] flex flex-col h-screen'>
+      <div className='bg-[#0b3366] w-[300px] flex flex-col min-h-screen'>
         <div className='flex py-6 pb-8 px-10 '>
           <img className='w-3/4' src=".././logo.png" alt="logo" />
         </div>
