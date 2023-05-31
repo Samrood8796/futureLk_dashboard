@@ -15,19 +15,19 @@ const Sidebar = () => {
         </div>
         <div className=' flex flex-col gap-3 px-10 text-white justify-center px-'>
           <div className='flex gap-2 py-1' >
-            <img className='w-6 h-6' src="/.././dashbord.png" alt="d" />
+            <img className='w-6 h-6' src=".././dashbord.png" alt="d" />
             <p className='mx-2 text-sm'>Dashboard</p>
           </div>
           <div className='flex gap-2 py-1'>
-            <img className='w-6 h-6' src="/.././compaigns.png" alt="d" />
+            <img className='w-6 h-6' src=".././compaigns.png" alt="d" />
             <p className='mx-2 text-sm'>Compaigns</p>
           </div>
           <div className='flex gap-2 py-1'>
-            <img className='w-6 h-6' src="/.././commands.png" alt="d" />
+            <img className='w-6 h-6' src=".././commands.png" alt="d" />
             <p className='mx-2 text-sm'>Commands</p>
           </div>
           <div className='flex gap-2 py-1 '>
-            <img className='w-6 h-6' src="/.././zones.png" alt="d" />
+            <img className='w-6 h-6' src=".././zones.png" alt="d" />
             <p className='mx-2 text-sm'>zones</p>
           </div>
           <div className='flex gap-2 py-1'>
