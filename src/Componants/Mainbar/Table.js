@@ -2,7 +2,7 @@ import React from 'react'
 
 const Table = () => {
     return (
-        <table className="table-auto w-full bg-white  text-sm text-left ">
+        <table className="table-auto w-full bg-white  text-sm text-left  ">
             <thead className="text-xs font-bold">
                 <tr className='text-gray-300'>
                     <th scope="col" className="text-black px-6 py-3">
@@ -22,8 +22,8 @@ const Table = () => {
                     </th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody >
+                <tr className='overflow-x-auto'>
                     <td className="px-6 py-4">
                     </td>
                     <td className="px-6 py-4">

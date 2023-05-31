@@ -26,7 +26,7 @@ const Mainbar = () => {
             <div class="md:col-span-1">
                 {/* <div class="grid md:grid-cols-2 gap-4"> */}
 
-                <div style={{ backgroundColor: "#fff", padding: 20 }}>
+                <div className="bg-[#fff] p-5" >
                     <div style={{ textAlign: "left" }}>General Information</div>
                     <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
                         <div style={{ color: "#ccc" }} className={"mt10 ml10"}>Projects</div>
@@ -41,7 +41,7 @@ const Mainbar = () => {
                     <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
                         <div style={{ color: "#ccc" }} className={"mt10 ml10"}>Users</div>
                         <div className={"mt10 ml10"} style={{ width: "12rem" }}><ProgressBar
-                            completed="10"
+                            completed="40"
                             bgColor="#0B3366"
 
                         />
@@ -71,8 +71,8 @@ const Mainbar = () => {
                 </div>
 
                 {/* section 2 */}
-                <div className="max-h-64 overflow-y-auto">
-                    <div className={"mt20"}>
+                <div className="mt-2">
+                    <div  className=" max-h-64 overflow-y-auto">
                         <div style={{ backgroundColor: "#fff", padding: 10 }}>
                             <div style={{ margin: 10, textAlign: "left" }}>Device Status</div>
                             <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
@@ -104,7 +104,7 @@ const Mainbar = () => {
 
                 {/* section 3 */}
                
-                <div style={{ backgroundColor: "#fff", padding: 20 }}>
+                <div className="bg-[#fff] p-5" >
                     <div style={{ textAlign: "left" }}>Live Statistics</div>
                     <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
                         <div style={{ marginLeft: 10 }}>

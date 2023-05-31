@@ -12,10 +12,10 @@ const Dashboard = () => {
                 <div className='w-full bg-[#f6f6f6]'>
                     <Navbar />
                     <p className='p-6 text-lg font-semibold'>Project</p>
-                    <div className='px-8'>
+                    <div className='px-8 overflow-x-scroll'>
                         <Table />
                     </div>
-                  <div className='px-8'>
+                  <div className='md:px-8 mx-2'>
                     <Mainbar/>
                   </div>
                 </div>
