@@ -100,7 +100,7 @@ const Mainbar = () => {
                 </div>
 
             </div>
-            <div class="md:col-span-1">
+            <div class=" md:col-span-1">
 
                 {/* section 3 */}
                

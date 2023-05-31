@@ -2,6 +2,7 @@ import React from 'react'
 
 const Table = () => {
     return (
+        <div className='overflow-x-scroll'>
         <table className="table-auto w-full bg-white  text-sm text-left  ">
             <thead className="text-xs font-bold">
                 <tr className='text-gray-300'>
@@ -41,6 +42,7 @@ const Table = () => {
                 </tr>
             </tbody>
         </table >
+        </div>
     )
 }
 

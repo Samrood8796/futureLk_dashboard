@@ -9,7 +9,7 @@ const Sidebar = () => {
   };
   return (
     <>
-      <div className={` bg-[#0b3366] w-[290px]   min-h-screen ${isOpen ? 'block' : 'hidden'}`}>
+      <div className={` bg-[#0b3366] w-[290px] min-h-screen ${isOpen ? 'block' : 'hidden'}`}>
         <div className='flex py-6 pb-8 px-10 '>
           <img className='w-3/4' src=".././logo.png" alt="logo" />
         </div>
