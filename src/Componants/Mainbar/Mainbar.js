@@ -125,6 +125,7 @@ const Mainbar = () => {
 
                 {/* section 4 */}
                 <div style={{ marginTop: 20 }}>
+                <div  className=" max-h-64 overflow-y-auto">
                     <div style={{ backgroundColor: "#fff", padding: 20 }}>
                         <div style={{ textAlign: "left", marginBottom: 10 }}>Activity Logs</div>
                         <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
@@ -166,7 +167,7 @@ const Mainbar = () => {
                         </div>
                     </div>
                 </div>
-                {/* </div> */}
+                </div>
 
             </div>
             <div className='md:col-span-1'>
