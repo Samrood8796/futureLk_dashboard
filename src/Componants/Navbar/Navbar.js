@@ -5,7 +5,7 @@ import {SlEarphonesAlt} from 'react-icons/sl'
 const Navbar = () => {
   return (
     <div className='bg-white h-[68px]'>
-        <div className='flex gap-3 justify-end py-6 items-center pr-5 '>
+        <div className='flex gap-3 justify-center md:justify-end py-6 items-center pr-5 '>
           <div className='h-8 w-8  text-[#5160a2' >
         <AiOutlineUser/>
           </div>

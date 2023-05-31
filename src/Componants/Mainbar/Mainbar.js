@@ -22,16 +22,16 @@ const Mainbar = () => {
         { device: "Test Device 01", status: "online", lr: "Wed April 26 2023; 03:00" },
     ]
     return (
-        <div class="grid grid-cols-3 gap-2 py-5">
-            <div class="col-span-2">
-                <div class="grid grid-cols-2 gap-4">
+        <div class="grid md:grid-cols-3 gap-2 py-5">
+            <div class="md:col-span-2">
+                <div class="grid md:grid-cols-2 gap-4">
 
                     <div style={{ backgroundColor: "#fff", padding: 20 }}>
                         <div style={{ textAlign: "left" }}>General Information</div>
                         <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
                             <div style={{ color: "#ccc" }} className={"mt10 ml10"}>Projects</div>
                             <div className={"mt10 ml10"} style={{ width: "12rem" }}><ProgressBar
-                                completed="20"
+                                completed="60"
                                 bgColor="#0B3366"
 
                             />
@@ -41,7 +41,7 @@ const Mainbar = () => {
                         <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
                             <div style={{ color: "#ccc" }} className={"mt10 ml10"}>Users</div>
                             <div className={"mt10 ml10"} style={{ width: "12rem" }}><ProgressBar
-                                completed="100"
+                                completed="10"
                                 bgColor="#0B3366"
 
                             />
@@ -51,7 +51,7 @@ const Mainbar = () => {
                         <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
                             <div style={{ color: "#ccc" }} className={"mt10 ml10"}>Channels</div>
                             <div className={"mt10 ml10"} style={{ width: "12rem" }}><ProgressBar
-                                completed="100"
+                                completed="90"
                                 bgColor="#0B3366"
 
                             />
@@ -61,7 +61,7 @@ const Mainbar = () => {
                         <div className={"rowFlex"} style={{ justifyContent: "space-between" }}>
                             <div style={{ color: "#ccc" }} className={"mt10 ml10"}>Devices</div>
                             <div className={"mt10 ml10"} style={{ width: "12rem" }}><ProgressBar
-                                completed="50"
+                                completed="70"
                                 bgColor="#0B3366"
 
                             />
@@ -162,7 +162,7 @@ const Mainbar = () => {
 
                 </div>
             </div>
-            <div className='col-span-1'>
+            <div className='md:col-span-1'>
                 {/* map */}
                 <div className="w-full h-64">
                     <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: '100%', width: '100%' }}>
