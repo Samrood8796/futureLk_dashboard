@@ -1,0 +1,42 @@
+.rowFlex{
+    display: flex;
+    flex-direction: row;
+}
+
+.mt20{
+    margin-top:20px;
+}
+
+.mt10{
+    margin-top:10px;
+}
+.ml10{
+    margin-left: 10px;
+}
+
+.colorWhite{
+    color:#fff;
+    margin-left:10px
+}
+
+.wrapper {
+    border: 3px solid blue;
+  }
+  
+  .container {
+    background-color: pink;
+  }
+  
+  .barCompleted {
+    background-color: lightblue;
+    width: 80%;
+  }
+  
+  .label {
+    font-size: 20px;
+    color: green;
+  }
+
+  .mt40{
+    margin-top:40px;
+  }
